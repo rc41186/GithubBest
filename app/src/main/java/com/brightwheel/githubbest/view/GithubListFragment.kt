@@ -9,12 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.brightwheel.githubbest.R
 import com.brightwheel.githubbest.databinding.FragmentGithubCardListBinding
-import com.brightwheel.githubbest.model.GithubStarResponseModel
+import com.brightwheel.githubbest.model.GithubRepoTopContributor
+import com.brightwheel.githubbest.model.GithubStarResultModel
 import com.brightwheel.githubbest.viewmodel.retrofit.RetrofitClientServiceManager
 import com.brightwheel.githubbest.viewmodel.contract.GithubListContract
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 /**
  * Fragment response for displaying list of top 100 starred Github repositories.
@@ -60,19 +58,27 @@ class GithubListFragment : Fragment(), GithubListContract.View {
      */
     private fun getGithubRepoData() {
         val result = RetrofitClientServiceManager.getInstance().getGithubService().getMostStarred("stars", "stars", "desc", 100)
-        result.enqueue(object : Callback<GithubStarResponseModel> {
-            override fun onResponse(
-                call: Call<GithubStarResponseModel>,
-                response: Response<GithubStarResponseModel>
-            ) {
-                if(response?.body() != null) {
-                    githubRepoAdapter.setGitRepoList(response.body()!!.result)
-                }
-            }
+        val stars : ArrayList<GithubStarResultModel> = result.execute().body()!!.result
+        getRepoTopContributor(stars)
+    }
 
-            override fun onFailure(call: Call<GithubStarResponseModel>, t: Throwable) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-        })
+    /**
+     * Gets the Top Contributors by Repo
+     *
+     * @param items - The list of starred repots
+     *
+     * TODO: Need to refactor, should be async due to the amount of calls.
+     *
+     * Issue - 60 class are allowed within an hour - this caused a delays in implementation.
+     */
+    private fun getRepoTopContributor(items : ArrayList<GithubStarResultModel>) {
+        val topContributorList : ArrayList<GithubRepoTopContributor?> = ArrayList()
+        for(data in items) {
+            var qualifedName = data.full_name.split("/")
+            val result = RetrofitClientServiceManager.getInstance().getGithubService().getContributor(qualifedName[0], qualifedName[1])
+            val contributor = result.execute().body()?.get(0)
+            topContributorList.add(contributor)
+        }
+        githubRepoAdapter.setGitRepoList(items, topContributorList)
     }
 }

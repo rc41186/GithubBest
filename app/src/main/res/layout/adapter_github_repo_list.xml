@@ -51,7 +51,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
                     android:textSize="14sp"
-                    android:text="@{`Top Contributor: ` + contributor.login}"
+                    android:text='@{"Top Contributor: " + contributor!=null ? contributor.login : "N/A"}'
                     tools:text="Top Contributor: Tom"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -85,34 +85,6 @@
                     android:layout_marginTop="15dp"
                     android:background="@android:color/darker_gray"/>
             </LinearLayout>
-
-
-
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <androidx.appcompat.widget.AppCompatTextView-->
-<!--                    android:id="@+id/repo_stars"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_marginEnd="10dp"-->
-<!--                    android:text="@{`Star Count: ` + repo.starGazerCount}"-->
-<!--                    tools:text="Star Count: 100000"/>-->
-
-<!--            </LinearLayout>-->
-
         </LinearLayout>
-
-
-
     </androidx.cardview.widget.CardView>
-
-
-
-
 </layout>

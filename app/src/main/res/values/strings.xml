@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Githubs Top 100 Starred Repos</string>
     <string name="star_count">STAR COUNT</string>
+    <string name="not_applicable">N/A</string>
 </resources>

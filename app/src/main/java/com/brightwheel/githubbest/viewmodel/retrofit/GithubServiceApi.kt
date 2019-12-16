@@ -1,6 +1,6 @@
 package com.brightwheel.githubbest.viewmodel.retrofit
 
-import com.brightwheel.githubbest.model.GithubRepoContributor
+import com.brightwheel.githubbest.model.GithubRepoTopContributor
 import com.brightwheel.githubbest.model.GithubStarResponseModel
 import retrofit2.Call
 import retrofit2.http.GET
@@ -18,8 +18,8 @@ interface GithubServiceApi {
                        @Query("order") order : String,
                        @Query("per_page") per_page : Int) : Call<GithubStarResponseModel>
 
-    @GET("/repos/{prename}/{name}/contributors")
-    fun getTopContributor(@Path("prename") prename : String,
-                          @Path("name") name : String) : Call<List<GithubRepoContributor>>
+    @GET("/repos/{gitname}/{name}/contributors")
+    fun getContributor(@Path("gitname") gitname : String,
+                          @Path("name") name : String) : Call<ArrayList<GithubRepoTopContributor>>
 
 }
