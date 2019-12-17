@@ -8,6 +8,7 @@ Android Application Showing the Top 100 Github Repositories
  
 ## Screenshot:
 ![image](https://github.com/rc41186/GithubBest/blob/master/app/resources/screenshot/Screenshot_1576543527.png)
+![image](https://github.com/rc41186/GithubBest/blob/master/app/resources/screenshot/Screenshot_1576543539.png)
 
 ## Time Spent:
     ~ 4 Hours
