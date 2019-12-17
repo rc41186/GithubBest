@@ -5,7 +5,9 @@ Android Application Showing the Top 100 Github Repositories
  The purpose of this project is to create a Android application that is able to
  make an API call to display the top 100 Starred Repository with its top contributors
  using third party libraries.
-
+ 
+## Screenshot:
+![image](https://github.com/rc41186/GithubBest/blob/master/app/resources/screenshot/Screenshot_1576511955.png)
 
 ## Time Spent:
     ~ 4 Hours
