@@ -54,10 +54,10 @@ Android Application Showing the Top 100 Github Repositories
 ## CI/CD:
     - https://app.bitrise.io/app/e8e2ca5d9c5a580a#/builds
 
-## Third Party Libraries:
-    - Retrofit
-    - Databinding
-    - Android Support Libraries
+## Third Party Libraries and Usage:
+    - Retrofit - https://github.com/rc41186/GithubBest/tree/master/app/src/main/java/com/brightwheel/githubbest/viewmodel/retrofit
+    - Databinding - https://github.com/rc41186/GithubBest/blob/899a24940413f6561cfdfa94885ec6d74f0f7e85/app/src/main/res/layout/adapter_github_repo_list.xml#L6
+    - Android Support Libraries - https://github.com/rc41186/GithubBest/blob/899a24940413f6561cfdfa94885ec6d74f0f7e85/app/build.gradle#L41 (throughout project)
 
 ## Wish-List:
     - Progress Bar of some sort - Indicating loading
