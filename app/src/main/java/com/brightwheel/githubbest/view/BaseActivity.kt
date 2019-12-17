@@ -24,7 +24,8 @@ open class BaseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         /**
-         * Allow network calls on main thread - temp hack, not a good approach.
+         * Allow network calls on main thread - temp hack, not appropriate, calls should be async
+         * running on different threads.
          */
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)

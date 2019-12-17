@@ -51,7 +51,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
                     android:textSize="14sp"
-                    android:text='@{"Top Contributor: " + contributor!=null ? contributor.login : "N/A"}'
+                    android:text="@{`Top Contributor: ` + contributor.login}"
                     tools:text="Top Contributor: Tom"/>
 
                 <androidx.appcompat.widget.AppCompatTextView

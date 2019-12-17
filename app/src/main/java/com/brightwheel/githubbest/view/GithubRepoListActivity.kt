@@ -5,6 +5,9 @@ import androidx.databinding.DataBindingUtil
 import com.brightwheel.githubbest.R
 import com.brightwheel.githubbest.databinding.ActivityGithubRepoListBinding
 
+/**
+ * Github Repo list activity
+ */
 class GithubRepoListActivity : BaseActivity() {
 
     private var binding : ActivityGithubRepoListBinding? = null
