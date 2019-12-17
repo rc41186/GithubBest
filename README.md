@@ -16,7 +16,6 @@ Android Application Showing the Top 100 Github Repositories
          - Padding Sizing
          - Margin Sizing
          - Layout Design
-         - Databinding
          - Fragment Setup
          - RecyclerView Setup
 
@@ -24,6 +23,7 @@ Android Application Showing the Top 100 Github Repositories
          - Retrofit
          - Model Declaration
          - Github Service Setup via Retofit
+         - Databinding
          - Debugging
 
     - 1 Hour
@@ -34,8 +34,9 @@ Android Application Showing the Top 100 Github Repositories
         - An attempt UI/Unit Tests
         
 ## Known Issues:
-    - Top Contributor needs to be handled better, should display text if API Call limit is reached
-
+    - Top Contributor needs to be handled better, should display some text if API Call limit is reached.
+    - Performance can be better on Top Contributor API Call.
+    - Wrong github URL used, should be the non-api URL to repository. 
     
 ## Challenges:
     - Finding the right Github API call
@@ -47,6 +48,8 @@ Android Application Showing the Top 100 Github Repositories
     - Environment Setup - Personal system didn't have the latest and greatest Android Studio and SDKs.
 
     - Technical Brain Farts - 9 months away from Android, had to go through some refreshers and library's latest versions.
+    
+    - An old computer that had a tough time running Android Studio.
 
 ## CI/CD:
     - https://app.bitrise.io/app/e8e2ca5d9c5a580a#/builds
@@ -57,10 +60,10 @@ Android Application Showing the Top 100 Github Repositories
     - Android Support Libraries
 
 ## Wish-List:
-    - Progress Bar of some sort
+    - Progress Bar of some sort - Indicating loading
     - Utilize more of Clean Architecture
     - UseCases
-    - Coroutines or RxAndroid/RxKotlin
+    - Coroutines or RxAndroid/RxKotlin/RxJava
     - Dependency Injection
     - UI Tests
     - Unit Tests
