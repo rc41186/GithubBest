@@ -1,9 +1,9 @@
-package com.brightwheel.githubbest.view
+package com.android.githubbest.view
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.brightwheel.githubbest.R
-import com.brightwheel.githubbest.databinding.ActivityGithubRepoListBinding
+import com.android.githubbest.R
+import com.android.githubbest.databinding.ActivityGithubRepoListBinding
 
 /**
  * Github Repo list activity

@@ -1,7 +1,7 @@
-package com.brightwheel.githubbest.viewmodel.retrofit
+package com.android.githubbest.viewmodel.retrofit
 
-import com.brightwheel.githubbest.model.GithubRepoTopContributor
-import com.brightwheel.githubbest.model.GithubStarResponseModel
+import com.android.githubbest.model.GithubRepoTopContributor
+import com.android.githubbest.model.GithubStarResponseModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

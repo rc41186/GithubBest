@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest
+package com.android.githubbest
 
 import org.junit.Test
 

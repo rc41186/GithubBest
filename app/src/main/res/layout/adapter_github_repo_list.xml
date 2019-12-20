@@ -6,11 +6,11 @@
     <data>
         <variable
             name="repo"
-            type="com.brightwheel.githubbest.model.GithubStarResultModel" />
+            type="com.android.githubbest.model.GithubStarResultModel" />
 
         <variable
             name="contributor"
-            type="com.brightwheel.githubbest.model.GithubRepoTopContributor" />
+            type="com.android.githubbest.model.GithubRepoTopContributor" />
     </data>
 
     <androidx.cardview.widget.CardView

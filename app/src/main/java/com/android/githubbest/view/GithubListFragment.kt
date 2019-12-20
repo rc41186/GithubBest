@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest.view
+package com.android.githubbest.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.brightwheel.githubbest.R
-import com.brightwheel.githubbest.databinding.FragmentGithubCardListBinding
-import com.brightwheel.githubbest.model.GithubRepoTopContributor
-import com.brightwheel.githubbest.model.GithubStarResultModel
-import com.brightwheel.githubbest.viewmodel.retrofit.RetrofitClientServiceManager
-import com.brightwheel.githubbest.viewmodel.contract.GithubListContract
+import com.android.githubbest.R
+import com.android.githubbest.databinding.FragmentGithubCardListBinding
+import com.android.githubbest.model.GithubRepoTopContributor
+import com.android.githubbest.model.GithubStarResultModel
+import com.android.githubbest.viewmodel.retrofit.RetrofitClientServiceManager
+import com.android.githubbest.viewmodel.contract.GithubListContract
 
 /**
  * Fragment response for displaying list of top 100 starred Github repositories.

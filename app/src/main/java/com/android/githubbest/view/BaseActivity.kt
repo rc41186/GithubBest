@@ -1,8 +1,8 @@
-package com.brightwheel.githubbest.view
+package com.android.githubbest.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.brightwheel.githubbest.R
+import com.android.githubbest.R
 import android.os.StrictMode
 
 

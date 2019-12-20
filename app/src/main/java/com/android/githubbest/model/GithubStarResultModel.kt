@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest.model
+package com.android.githubbest.model
 
 import com.google.gson.annotations.SerializedName
 

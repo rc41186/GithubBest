@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest.viewmodel.retrofit
+package com.android.githubbest.viewmodel.retrofit
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest.viewmodel.contract
+package com.android.githubbest.viewmodel.contract
 
 
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.brightwheel.githubbest.view
+package com.android.githubbest.view
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.brightwheel.githubbest.R
-import com.brightwheel.githubbest.databinding.AdapterGithubRepoListBinding
-import com.brightwheel.githubbest.model.GithubRepoTopContributor
-import com.brightwheel.githubbest.model.GithubStarResultModel
+import com.android.githubbest.R
+import com.android.githubbest.databinding.AdapterGithubRepoListBinding
+import com.android.githubbest.model.GithubRepoTopContributor
+import com.android.githubbest.model.GithubStarResultModel
 
 /**
  * GithubListAdapter class used to bind the Github repo data to the RecyclerView for display.
